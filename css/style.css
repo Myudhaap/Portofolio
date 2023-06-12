@@ -393,7 +393,7 @@ section .heading{
 /* project */
 .project .project-container{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
   gap: 1.5rem;
 }
 
@@ -402,6 +402,7 @@ section .heading{
   border-radius: .5rem;
   box-shadow: 0 .5rem 1.5rem var(--shadow);
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   opacity: 0;
   transform: translateY(-100px);
@@ -414,7 +415,7 @@ section .heading{
 }
 
 .project .project-container .box .image{
-  width: 40rem;
+  flex: 1 1 20rem;
   aspect-ratio: 1;
   border-radius: .5rem;
   overflow: hidden;
@@ -433,7 +434,8 @@ section .heading{
 }
 
 .project .project-container .box .content{
-  padding: 1.5rem;
+  padding: 1.5rem;  
+  flex: 1 1 20rem;
 }
 
 .project .project-container .box .content .title{

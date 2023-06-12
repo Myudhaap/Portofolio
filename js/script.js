@@ -16,7 +16,7 @@ const observer = new IntersectionObserver(entries => {
     entry.target.classList.toggle('hidden-right', entry.isIntersecting)
   }) 
 }, {
-  threshold: .5,
+  threshold: .8,
   rootMargin: '50px',
 })
 

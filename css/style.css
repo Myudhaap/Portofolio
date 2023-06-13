@@ -317,10 +317,12 @@ section .heading{
   flex: 1 1 40%;
   opacity: 0;
   transform: translateX(100px);
+  overflow: hidden;
 }
 
 .about .about-container .content.hidden-right{
   flex: 1 1 40%;
+  display: block;
   opacity: 1;
   transform: translateX(0);
 }
@@ -476,7 +478,7 @@ section .heading{
 
 .contact .contact-form .wrap input, .contact .contact-form .wrap textarea{
   background-color: var(--bg-color);
-  min-width: 100%;
+  width: 100%;
   padding: .8rem 1.5rem;
   resize: none;
 }

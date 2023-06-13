@@ -35,7 +35,7 @@ svg{
   display: block;
 }
 
-section{
+section, footer{
   padding: 2rem 7%;
 }
 
@@ -453,9 +453,12 @@ section .heading{
 }
 
 /* contact */
+.contact .heading{
+  margin-top: 2rem;
+}
 .contact .contact-form{
   width: 80%;
-  margin: 0 auto;
+  margin: 5rem auto;
   border: 1px solid var(--bg-color);
   border-radius: .5rem;
   box-shadow: 0 .5rem 1.5rem var(--shadow);
@@ -493,6 +496,23 @@ section .heading{
   background-color: none;
   width: fit-content;
   cursor: pointer;
+}
+
+/* footer */
+.footer{
+  padding-top: 4rem;
+  background-color: var(--color-white);
+}
+
+.footer div{
+  text-align: center;
+  text-transform: none;
+  font-size: 1.5rem;
+}
+
+.footer div span{
+  color: var(--accent-color);
+  font-weight: 600;
 }
 
 /* media queri */

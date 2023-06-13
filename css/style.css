@@ -296,6 +296,7 @@ section .heading{
   gap: 10rem;
   padding: 10rem 10%;
   padding-bottom: 1rem;
+  overflow: hidden;
 }
 
 .about .about-container .image{

@@ -160,6 +160,39 @@
     </section>
     <!-- portofolio section end -->
 
+    <!-- form section start -->
+    <section class="contact" id="contact">
+      <h3 class="heading">Contact me</h3>
+
+      <form action="" id="form-email" class="contact-form">
+        <div class="form-group">
+          <div class="wrap">
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name" placeholder="Your Name">
+          </div>
+          <div class="wrap">
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" placeholder="Your Email">
+          </div>
+        </div>
+        <div class="wrap">
+          <label for="message">Message :</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+        <input type="submit" value="Send" class="btn">
+      </form>
+    </section>
+    <!-- form section end -->
+
+    <!-- emailjs -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("vK_5ongzvUVkkbnHx");
+      })();
+    </script>
     <script src="./js/script.js"></script>
   </body>
 </html>

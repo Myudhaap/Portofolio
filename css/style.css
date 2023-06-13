@@ -452,6 +452,48 @@ section .heading{
   text-decoration: underline;
 }
 
+/* contact */
+.contact .contact-form{
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid var(--bg-color);
+  border-radius: .5rem;
+  box-shadow: 0 .5rem 1.5rem var(--shadow);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact .contact-form .wrap label{
+  display: block;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-weight: 600;
+}
+
+.contact .contact-form .wrap input, .contact .contact-form .wrap textarea{
+  background-color: var(--bg-color);
+  min-width: 100%;
+  padding: .8rem 1.5rem;
+  resize: none;
+}
+
+.contact .contact-form .form-group{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact .contact-form .form-group .wrap{
+  flex: 1 1 49%;
+}
+
+.contact .contact-form .btn{
+  background-color: none;
+  width: fit-content;
+  cursor: pointer;
+}
 
 /* media queri */
 @media (max-width: 1224px) {

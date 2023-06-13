@@ -17,12 +17,58 @@ const observer = new IntersectionObserver(entries => {
   }) 
 }, {
   threshold: .8,
-  rootMargin: '50px',
 })
 
 elHidden.forEach(el => {
   observer.observe(el)
 })
+
+// email forms
+const sendEmail = async (event) => {
+  const templateParams = {
+    name: event.target.elements.name.value,
+    email: event.target.elements.email.value,
+    message: event.target.elements.message.value
+  }
+
+  const userId = 'vK_5ongzvUVkkbnHx'
+  const serviceId = 'service_9bddbcc'
+  const templateId = 'template_70htpa9'
+
+  const data = {
+    service_id: serviceId,
+    template_id: templateId,
+    user_id: userId,
+    template_params: templateParams
+  }
+
+  try{
+    const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data)
+    })
+    alert('Email success!!!')
+  }catch(error){
+    alert('Email failed!!!')
+    console.error(error)
+  } 
+
+  //   alert('Success!', response.status, response.text)
+  // })
+  // .catch((error) => {
+  //   alert('Failed...', error)
+  // })
+}
+
+const formsEmail = document.forms['form-email']
+formsEmail.onsubmit = (event) => {
+  event.preventDefault()
+
+  sendEmail(event)
+}
 
 
 window.onscroll = () => {
